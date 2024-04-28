@@ -14,18 +14,18 @@ const App = () => {
   return (
     <div>
       {/* <Cursor /> */}
-      <section id="Homepage">
+      <section id="Home">
         <Navbar />
         <Hero />
       </section>
-      <section id="cometences">
+      <section id="Compétences">
         <Competences />
       </section>
-      <section>
+      <section id ="Services">
         <Services />
       </section>      
       <Portfolio />
-      <section id="Reviews">
+      <section id="Avis">
         <Reviews  />
       </section>
       <section id="Contact">

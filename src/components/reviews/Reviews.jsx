@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import "./reviews.scss"
+import './reviews.scss';
+import { IoIosArrowDropleftCircle } from 'react-icons/io';
+import { IoIosArrowDroprightCircle } from 'react-icons/io';
 
 const Reviews = () => {
   const [currentItem, setCurrentItem] = useState(0);
@@ -40,11 +42,15 @@ const Reviews = () => {
   };
 
   const handleNext = () => {
-    setCurrentItem((prevItem) => (prevItem === reviews.length - 1 ? 0 : prevItem + 1));
+    setCurrentItem((prevItem) =>
+      prevItem === reviews.length - 1 ? 0 : prevItem + 1
+    );
   };
 
   const handlePrev = () => {
-    setCurrentItem((prevItem) => (prevItem === 0 ? reviews.length - 1 : prevItem - 1));
+    setCurrentItem((prevItem) =>
+      prevItem === 0 ? reviews.length - 1 : prevItem - 1
+    );
   };
 
   const handleRandom = () => {
@@ -55,27 +61,28 @@ const Reviews = () => {
 
   return (
     <div className="container">
-      <h2>our reviews</h2>
-    <div className="review">
-      <div className="img-container">
-        <img src={img} alt={name} className="person-img" />
+      <h2>Nos avis</h2>
+      <div className="container__reviews">
+        <div className="" onClick={handlePrev}>
+          <IoIosArrowDropleftCircle className="arrow" />
+        </div>
+        <div className="review">
+          <div className="img-container">
+            <img src={img} alt={name} className="person-img" />
+          </div>
+          <h4 className="author">{name}</h4>
+          <p className="job">{job}</p>
+          <p className="info">{text}</p>
+          <div className="button-container">
+            {/* <button className="random-btn" onClick={handleRandom}>
+            Aléatoire
+          </button> */}
+          </div>
+        </div>
+        <div className="" onClick={handleNext}>
+          <IoIosArrowDroprightCircle className="arrow" />
+        </div>
       </div>
-      <h4 className="author">{name}</h4>
-      <p className="job">{job}</p>
-      <p className="info">{text}</p>
-      <div className="button-container">
-        <button className="prev-btn" onClick={handlePrev}>
-          Précédent
-        </button>
-        <button className="next-btn" onClick={handleNext}>
-          Suivant
-        </button>
-        
-      </div>
-      <button className="random-btn" onClick={handleRandom}>
-          Aléatoire
-        </button>
-    </div>
     </div>
   );
 };

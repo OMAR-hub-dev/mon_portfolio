@@ -5,13 +5,15 @@
   max-width: 1366px;
   margin: auto;
   display: flex;
+  
   align-items: center;
-  gap: 50px;
+  gap: 90px;
 
   @include mobile {
     width: 100%;
     padding: 10px;
     flex-direction: column;
+    gap: 20px;
   }
 
   .textContainer {
@@ -28,11 +30,13 @@
     }
 
     h1 {
-      font-size: 100px;
-      line-height: 88px;
+      font-size: 30px;
+      line-height: 35px;
+      text-align: center;
+      color: gray ;
 
       @include mobile {
-        font-size: 36px;
+        font-size: 20px;
       }
     }
 
@@ -51,18 +55,29 @@
     }
 
 
-    .phoneSvg {
-      stroke: orange;
+    .email_icone {
+      width: 550px;
+      height: 350px;
+     color: orange;
       position: absolute;
       margin: auto;
-      z-index: -1;
+      @include mobile {
+        width: 350px;
+       height: 150px;
+      }
+      
     }
 
     form {
+      width: 650px;
+      height: 380px;
       display: flex;
       flex-direction: column;
       gap: 20px;
-
+      @include mobile {
+        width: 450px;
+       height: 200px;
+      }
       input,
       textarea {
         padding: 20px;
