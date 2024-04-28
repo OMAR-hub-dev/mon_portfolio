@@ -1,0 +1,129 @@
+@import "../../app.scss";
+.container {
+  height: 100%;
+  margin: auto 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  @include mobile{
+    margin : auto 0.5rem;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: orange;
+    @include mobile{font-size: 1.75rem;}
+  }
+
+  span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font-size: 23px;
+
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.632);
+    @include mobile{font-size:12px;}
+
+    h5 {
+      margin-right: 5px;
+    }
+  }
+
+  .experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    @include mobile{ 
+      grid-template-columns: 1fr;
+      gap : 2rem;}
+   
+    .experience__ {
+      background: transparent;
+      padding: 3rem;
+      border-radius: 2rem;
+      border: 1px solid white;
+      @include mobile {
+       
+        padding: 1rem;
+      }
+
+      h3 {
+        text-align: center;
+        color: rebeccapurple;
+        font-size: 32px;
+        margin-bottom: 2.5rem;
+        @include mobile{font-size:  20px;}
+      }
+
+      .experience__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+        @include mobile{
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1.5rem;
+        }
+
+        .experience_details {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          align-items: center;
+          @include mobile {gap:0.5rem}
+
+          .experience__details-icons {
+            // margin:0.5px  10px;
+            color: orange;
+            font-size: 25px;
+          }
+          
+        }
+      }
+    }
+
+    .experience__:hover {
+      background-color: rgba(255, 255, 255, 0.898);
+      color: black !important;
+      cursor: default;
+
+      .experience__details-icons:hover {
+        color: #3f2a04;
+      }
+    }
+  }
+}
+
+/* -------------------- MEDIA QUERIES(medium devices)-------------------- */
+// @media screen and (max-width: 1024px) {
+//   .experience__container {
+//     grid-template-columns: 1fr;
+//   }
+
+//   .experience__container > div {
+//     width: 80%;
+//     padding: 2rem;
+//     margin: 0 auto;
+//   }
+
+//   .experience__content {
+//     padding: 1rem;
+//   }
+// }
+
+// /* -------------------- MEDIA QUERIES(small devices)-------------------- */
+// @media screen and (max-width: 600px) {
+//   .experience__container {
+//     gap: 1rem;
+//   }
+
+//   .experience__container > div {
+//     width: 100%;
+//     padding: 2rem 1rem;
+//   }
+// }

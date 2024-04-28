@@ -10,7 +10,7 @@
     max-width: 1366px;
     height: 100%;
     margin: auto;
-
+    
     .textContainer {
       width: 50%;
       height: 100%;
@@ -28,24 +28,27 @@
       }
 
       h2 {
-        font-size: 30px;
+        font-size: 35px;
         color: rebeccapurple;
         letter-spacing: 10px;
-        margin-left: 4rem;
-      }
-      h2::before{
-        content: '';
-        position: absolute;
-        width: 60px;
-        height: 1.9px;
-        background-color: rebeccapurple;
-        left: 6rem;
-        top:5.6rem;
+        display: flex;
+        align-items: center;
+        gap: 20px;
         @include mobile {
-          display: none ;
+          gap:5px;
         }
+
+        hr {
+          width: 100px;
+          border: none;
+          border-top: 2.7px solid rebeccapurple;
     
-    }
+          @include mobile {
+            width: 50px;
+          }
+        }
+      }
+      
 
       h1 {
         font-size: 88px;
@@ -56,19 +59,21 @@
       }
 
       .buttons {
-        button {
+          button {
           padding: 20px;
-          border: 1px solid white;
+          border: 2px solid rebeccapurple;
           border-radius: 10px;
           background-color: transparent;
-          color: white;
+          color: rebeccapurple;
           margin-right: 20px;
           cursor: pointer;
-          font-weight: 300;
+          font-weight: 700;
+          font-size: 18px;
         }
         button:hover{
           background-color: white;
-          color: #0c0c1d;
+          color: rebeccapurple;
+          border-color: white;
         }
       }
 
@@ -100,10 +105,10 @@
 
   .slidingTextContainer {
     position: absolute;
-    font-size: 30vh;
-    bottom: -50px;
+    font-size: 25vh;
+    top :5rem;
     white-space: nowrap;
-    color: #ffffff09;
+    color: #ffffff19;
     width: 50%;
     font-weight: bold;
   }
