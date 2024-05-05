@@ -39,8 +39,8 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          Mon objectif principal est de contribuer activement à l'expansion
-          <br /> et au développement de votre marque.
+          Mon objectif principal est de contribuer activement à l&apos;expansion
+          et au développement de votre marque.
         </p>
         <hr />
       </motion.div>
@@ -54,63 +54,50 @@ const Services = () => {
         <div className="title">
           <h1>
             <motion.b whileHover={{ color: 'orange' }}>pour votre</motion.b>{' '}
-            entreprise.
+            projet .
           </h1>
-          <button href="#Contact">Me contacter</button>
+          <a href="#Contact"><button className='btn' >Me contacter</button></a>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
-          whileHover={{ background: 'lightgray', color: 'black' }}
+          
         >
           <PiDevices className="services__icon" />
           <h2>Multi - plateforme</h2>
           <p>
-            Développement de sites web et création d'applications sur mesure
+            Développement de sites web et création d&apos;applications sur mesure
             pour répondre parfaitement aux besoins spécifiques de nos clients.
           </p>
           {/* <button>Go</button> */}
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: 'lightgray', color: 'black' }}
+          
         >
           <FaCode className="services__icon" />
           <h2>Développement Web</h2>
           <p>
-            Développement de sites web et création d'applications sur mesure
+            Développement de sites web et création d&apos;applications sur mesure
             pour répondre parfaitement aux besoins spécifiques de nos clients.
           </p>
           {/* <button>Go</button> */}
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: 'lightgray', color: 'black' }}
+          
         >
           <TbSettingsCheck className="services__icon" />
           <h2>Maintenance Web</h2>
           <p>
-            Assurance d'une gestion d'hébergement optimale, garantissant
-            l'accessibilité et l'intégration systématique des mises à jour de
+            Assurance d&apos;une gestion d&apos;hébergement optimale, garantissant
+            l&apos;accessibilité et l&apos;intégration systématique des mises à jour de
             sécurité.
           </p>
           {/* <button>Go</button> */}
         </motion.div>
 
-        {/* <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          {/* <button>Go</button> *
-        </motion.div> */}
       </motion.div>
     </motion.div>
   );

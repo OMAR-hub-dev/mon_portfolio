@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div>
       {/* <Cursor /> */}
-      <section id="Home">
+      <section id="Home" className="">
         <Navbar />
         <Hero />
       </section>

@@ -3,46 +3,56 @@
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
-  background: linear-gradient(180deg, #0c0c1d, #111132);
+  // background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
 
   .wrapper {
     max-width: 1366px;
     height: 100%;
-    margin: auto;
+    margin : 0 2em;
     
     .textContainer {
       width: 50%;
-      height: 100%;
+      height: 100%;      
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       gap: 40px;
+      @include tablet{
+        gap: 30px;
+      }
 
-      @include mobile {
-        height: 50%;
-        width: 100%;
+      @include mobile {       
         gap: 20px;
         align-items: center;
+        justify-content: center;
         text-align: center;
+        height: 40%;
+        width: 100%;
       }
 
       h2 {
-        font-size: 35px;
+        font-size: 3em;
         color: rebeccapurple;
-        letter-spacing: 10px;
+        letter-spacing: 5px;
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
+       
+        @include tablet{
+          font-size: 2em;        
+        }
         @include mobile {
-          gap:5px;
+          font-size: 1.5em;
+         gap: 5px;
+         letter-spacing: 2px;
         }
 
         hr {
           width: 100px;
           border: none;
           border-top: 2.7px solid rebeccapurple;
-    
+          @include tablet{width: 70px;}
           @include mobile {
             width: 50px;
           }
@@ -51,46 +61,37 @@
       
 
       h1 {
-        font-size: 88px;
+        font-size: 3.8em;
+        letter-spacing: 3px;
+        @include tablet{
+          font-size: 8vh;
+        }
 
         @include mobile {
           font-size: 36px;
         }
-      }
-
-      .buttons {
-          button {
-          padding: 20px;
-          border: 2px solid rebeccapurple;
-          border-radius: 10px;
-          background-color: transparent;
-          color: rebeccapurple;
-          margin-right: 20px;
-          cursor: pointer;
-          font-weight: 700;
-          font-size: 18px;
-        }
-        button:hover{
-          background-color: white;
-          color: rebeccapurple;
-          border-color: white;
-        }
-      }
+      }     
 
       img {
         width: 50px;
+        @include mobile{display: none;}
       }
     }
   }
 
   .imageContainer {
-    height: 100%;
+    height: 90%;
     position: absolute;
     top: 0;
     right: 0;
 
+    
+    @include tablet{
+      height: 60%;     
+      
+    }
     @include mobile {
-      height: 50%;
+      height: 60%;    
       width: 100%;
       top: unset;
       bottom: 0;
@@ -105,11 +106,17 @@
 
   .slidingTextContainer {
     position: absolute;
-    font-size: 25vh;
-    top :5rem;
+    font-size: 22vh;
+    bottom :-0.5rem;
     white-space: nowrap;
     color: #ffffff19;
     width: 50%;
     font-weight: bold;
+    @include tablet{
+      font-size: 17vh;
+    }
+    @include mobile{
+      font-size: 13vh;
+    }
   }
 }

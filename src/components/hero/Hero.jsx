@@ -40,7 +40,7 @@ const sliderVariants = {
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero ">
       <div className="wrapper">
         <motion.div
           className="textContainer"
@@ -53,12 +53,12 @@ const Hero = () => {
             Développeur Web FullStack
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
+            <motion.button variants={textVariants} className='btn'>
               <a href={CV} download>
                 Télécharger Cv
               </a>
             </motion.button>
-            <motion.button variants={textVariants}>
+            <motion.button variants={textVariants} className='btn'>
               <a href="#contact">Me contacter</a>
             </motion.button>
           </motion.div>
@@ -66,7 +66,8 @@ const Hero = () => {
             variants={textVariants}
             animate="scrollButton"
             src="/scroll.png"
-            alt=""
+            alt="scrollButton"
+            className='scrollButton'
           />
         </motion.div>
       </div>
