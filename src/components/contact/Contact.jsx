@@ -56,7 +56,7 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>&ldquo;&nbsp;Je suis disponible pour répondre à toutes vos questions. N&apos;hésitez pas à me contacter.&nbsp; &ldquo;</motion.h1>
+        <motion.h1 variants={variants}>&ldquo;&nbsp;Pour toute question ou demande d'information, je suis à votre écoute. N&apos;hésitez pas à me contacter.&nbsp; &ldquo;</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
           <span>oulaya.omar@gmail.com</span>
@@ -67,7 +67,7 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+33 658 94 16 91</span>
+          <span>06 58 94 16 91</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">

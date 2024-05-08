@@ -12,7 +12,7 @@ const items = [
   },
   {
     id: 2,
-    title: "La maison de la déco: Symfony",
+    title: "La maison de la déco : Symfony",
     img: "/lamaison_deco_1.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
     git : "https://github.com/OMAR-hub-dev/LaMaisonDeLADeco"
@@ -74,7 +74,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1>Projets réalisés</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (

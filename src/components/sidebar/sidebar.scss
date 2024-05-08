@@ -15,7 +15,7 @@
     bottom: 0;
     width: 400px;
     background: white;
-
+    @include tablet {width: 300px;}
     @include mobile {
       width: 200px;
     }
@@ -32,7 +32,7 @@
 
       a {
         font-size: 40px;
-
+        @include tablet{font-size: 30px;}
         @include mobile {
           font-size: 20px;
         }

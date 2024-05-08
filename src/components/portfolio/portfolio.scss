@@ -2,18 +2,16 @@
 
 .portfolio {
   position: relative;
-  
-  
   .progress {
     position: sticky;
     top: 0;
     left: 0;
-    padding-top: 50px;
-    text-align: center;   
-    font-size: 36px;
+    padding-top: 2em;
+    
       h1{
         font-size: 3.5rem;      
         color: #ffa500;
+
         @include tablet {
           font-size: 2.5rem;
         }
@@ -29,27 +27,29 @@
     .progressBar {
       height: 10px;
       background-color: white;
+      
     }
   }
 
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    // overflow: hidden;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // margin: 0 2.5rem;;
+    // width: 100%;
+    // height: 100%;
+   // overflow: hidden;
+   padding: 0 1rem;;
     
 
     .wrapper {
-      max-width: 1366px;
+      
       height: 100%;
-      margin: auto;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 50px;
-      margin : 0 2rem;
+      
 
       @include mobile {
         flex-direction: column;
@@ -79,7 +79,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
 
         @include mobile {
           transform: none !important;
@@ -89,17 +89,19 @@
         }
 
         h2 {
-          font-size: 2.5em;
+          font-size: 2em;
           color: #8bacea;
 
           @include mobile {
-            font-size: 1.75em;
+            font-size: 1.5em;
           }
         }
 
         p {
+          // margin-right : 3.5rem;
           color: gray;
           font-size: 20px;
+          text-align: justify;
 
           @include mobile {
             font-size: 16px;
