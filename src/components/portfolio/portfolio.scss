@@ -32,13 +32,7 @@
   }
 
   .container {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // margin: 0 2.5rem;;
-    // width: 100%;
-    // height: 100%;
-   // overflow: hidden;
+    
    padding: 0 1rem;;
     
 
@@ -109,7 +103,11 @@
         }
         .btn{
           color: #8bacea;
+          margin-left: 0;
           border-color: #8bacea;
+        }
+        .byn:hover{
+          background: rgba(255, 255, 255, 0.694);
         }
       
       }

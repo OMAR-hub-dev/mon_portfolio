@@ -96,48 +96,17 @@
           .experience__details-icons {
             // margin:0.5px  10px;
             color: orange;
-            font-size: 1.3em;
+            font-size: 1.5em;
           }
         }
       }
     }
 
-    .experience__:hover {
-      h3 {
-        color: rebeccapurple;
-      }
-      background-color: rgba(255, 255, 255, 0.805);
-      color: rgba(0, 0, 0, 0.708) !important;
-      cursor: default;
+    .experience__:hover {      
+      background-color: #5d5de39b;
+      color: rgba(0, 0, 0, 0.708) !important;      
+      cursor: default;    
     }
   }
 }
 
-/* -------------------- MEDIA QUERIES(medium devices)-------------------- */
-// @media screen and (max-width: 1024px) {
-//   .experience__container {
-//     grid-template-columns: 1fr;
-//   }
-
-//   .experience__container > div {
-//     width: 80%;
-//     padding: 2rem;
-//     margin: 0 auto;
-//   }
-
-//   .experience__content {
-//     padding: 1rem;
-//   }
-// }
-
-// /* -------------------- MEDIA QUERIES(small devices)-------------------- */
-// @media screen and (max-width: 600px) {
-//   .experience__container {
-//     gap: 1rem;
-//   }
-
-//   .experience__container > div {
-//     width: 100%;
-//     padding: 2rem 1rem;
-//   }
-// }

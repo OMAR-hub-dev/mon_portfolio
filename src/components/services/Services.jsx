@@ -39,8 +39,7 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          Mon objectif principal est de contribuer activement à l&apos;expansion
-          et au développement de votre marque.
+        Explorez mon portfolio pour découvrir mes compétences techniques et créatives en action !
         </p>
         <hr />
       </motion.div>
@@ -48,13 +47,13 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{ color: 'orange' }}>Idées</motion.b> uniques
+            <motion.b whileHover={{ color: 'orange' }}>je m&apos;adapte</motion.b> facilement
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{ color: 'orange' }}>pour votre</motion.b>{' '}
-            projet .
+            <motion.b whileHover={{ color: 'orange' }}>à vos</motion.b>{' '}
+            besoins .
           </h1>
           <a href="#Contact"><button className='btn' >Me contacter</button></a>
         </div>
@@ -67,8 +66,7 @@ const Services = () => {
           <PiDevices className="services__icon" />
           <h2>Multi - plateforme</h2>
           <p>
-            Développement de sites web et création d&apos;applications sur mesure
-            pour répondre parfaitement aux besoins spécifiques de nos clients.
+          Créer et optimiser des applications qui fonctionnent de manière fluide et cohérente sur plusieurs systèmes d'exploitation .
           </p>
           {/* <button>Go</button> */}
         </motion.div>

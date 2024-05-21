@@ -1,6 +1,9 @@
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
+import {BsLinkedin} from 'react-icons/bs'
+import {AiFillGithub} from 'react-icons/ai';
+import { BsDiscord } from "react-icons/bs";
 
 const Navbar = () => {
   return (
@@ -15,19 +18,10 @@ const Navbar = () => {
         >
           OULAYA Omar
         </motion.span>
-        <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/instagram.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/youtube.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
-          </a>
+        <div className="header_socials">
+          <a href="www.linkedin.com/in/omar-oulaya-270746220" target="_blank"><BsLinkedin/></a>
+          <a href="https://github.com/OMAR-hub-dev" target="_blank"><AiFillGithub/></a>
+          <a href="https://discord.com/users/898116111382482966" target="_blank"><BsDiscord /></a>
         </div>
       </div>
     </div>

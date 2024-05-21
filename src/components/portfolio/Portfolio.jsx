@@ -12,22 +12,31 @@ const items = [
   },
   {
     id: 2,
-    title: "La maison de la déco : Symfony",
+    title: "La maison de la déco : Symfony MySQL",
     img: "/lamaison_deco_1.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "Ce projet consiste à la mise en place d’un site Web qui gère la commercialisation des produits de décoration. En utilsant PHP/symfony et MySQL , Bootstrap.",
     git : "https://github.com/OMAR-hub-dev/LaMaisonDeLADeco"
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "critiques de films : Spring Boot/java - React Nodejs",
+    img: "/movie_projet.png",
+    desc: "une application en utilisant MongoDb pour la base de données, Java et Spring Boot pour le backend et React pour le frontend. une application de critique de films qui présentera une séparation  entre le code client et le code serveur. Ces deux parties (implémentées à l'aide de technologies différentes) peuvent évoluer en parallèle et indépendamment l'une de l'autre.",
+    git: "https://github.com/OMAR-hub-dev/Movie_review/tree/master--"
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "lancer de dé : vanilla js",
+    img: "/lancer_dé.PNG",
+    desc: "C'est un jeu de lancer de dés implémenté en Vanilla JavaScript. Il se joue à deux joueurs, Joueur 1 et Joueur 2, qui jouent alternativement en cliquant sur le bouton . À chaque tour, un joueur lance le dé autant de fois qu'il le souhaite. Chaque résultat est ajouté à son score EN COURS. Cependant, si un joueur obtient un 1 lors d'une série de lancers, tout son score EN COURS est perdu, et il doit passer la main au joueur adverse.",
+    git:'https://github.com/OMAR-hub-dev/jeu_de_d-_virtuel'
+  },
+  {
+    id: 5,
+    title: "Bondoufle store : React Node js",
+    img: "/Bondoufle_store.png",
+    desc: "C'est un site Web de commerce électronique entièrement fonctionnel exactement comme Amazon, en utilisant la stack MERN (MongoDB, ExpressJS, React et Node.JS).",
+    git: 'https://github.com/OMAR-hub-dev/Bondoufle-store'
   },
 ];
 

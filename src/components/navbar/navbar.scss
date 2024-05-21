@@ -25,14 +25,23 @@
       }
     }
 
-    .social {
-      display: flex;
-      gap: 20px;
-
-      img {
-        width: 18px;
-        height: 18px;
-      }
-    }
+    .header_socials{
+      display: flex;     
+      align-items:center ;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 1.25em;       
+        }
+        .header_socials  a:hover{
+          color : rebeccapurple;
+          font-size: 1.5em;
+        }
+  
+  .header_socials::after{
+      content: "";
+      width: 1.75rem;
+      height: 3px;
+      background:  rebeccapurple;
+  }
   }
 }
