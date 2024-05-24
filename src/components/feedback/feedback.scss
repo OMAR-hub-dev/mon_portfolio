@@ -1,0 +1,168 @@
+@import "../../app.scss";
+/* Feedback Section */
+.feedback {
+ margin-top: 4rem;
+   .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  .section-title {
+  margin-bottom: 3rem; 
+      h2 {
+      font-size: 3.5rem;
+      font-weight: 700;      
+      color: orange;
+      @include mobile {font-size: 2.5em;}
+    }
+      .lead {
+        font-size: 1.5rem; 
+        letter-spacing:0.5px;
+        font-weight: 600;
+        text-align: center;       
+      }
+      .line {
+          width: 100px;
+          height: 3px;
+          background-color: orange;
+          margin: 1rem auto;
+      }
+  }/* Feedback Items */
+  .feedback-inner {    
+    margin-top: 2rem;
+    .feedback-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;      
+      position: relative;
+      .feedback-item {
+        background-color: rgba(255, 255, 255, 0.81) ;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 5px 20px rgba(163, 163, 163, 0.52);
+        text-align: center;
+        position: absolute;  
+        transition: transform 0.25s, opacity 0.25s;
+        width: 23em;
+        height: 12.3em;
+        opacity: 0;
+        z-index: 0;
+        letter-spacing:0.5px;
+        font-weight: 550;
+        
+
+        
+        .text {
+          color: white;
+          margin-bottom: 1rem;
+          @include mobile{
+            margin-bottom: 0.5rem;
+          }
+           .quote-icon {
+          width: 2.5em; 
+          margin-right: 1em;         
+        }
+        }
+        .client {
+          position: relative;
+          width: 5em;
+          height: 5em;
+          border-radius: 50%;
+          overflow: hidden;
+          margin: 0 auto;
+          box-shadow: 0 5px 20px rgba(163, 163, 163, 0.598);
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+        }
+      }
+      
+      .feedback-item.active {
+        transform: translate(0);
+        width: 28em;
+        padding: 2.2rem;
+        opacity: 1;
+        z-index: 1;
+        background-color: #ED862F;
+        @include mobile{
+          width: 21em;
+          height:12em;
+          padding: 1.5rem;
+        }
+        
+      }
+      
+      .feedback-item.left {
+        transform: translateX(-90%) translateY(25%);
+        opacity: 0.5;
+        z-index: 0;
+        box-shadow:none;
+        @include mobile { display: none;}
+        .text{
+          color: rgba(0, 0, 0, 0.762);
+        }
+      }
+      
+      .feedback-item.right {  
+        transform: translateX(90%) translateY(25%) ; 
+        opacity: 0.5;
+        z-index: 0;
+        box-shadow:none;
+        @include mobile { display: none;}
+        .text{
+          color: rgba(0, 0, 0, 0.762);
+        }
+      }
+    }
+  }
+  /* Feedback Buttons */
+  .feedback-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 11rem;
+          
+      .feedback-btn {
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .feedback-btn:hover,
+      .feedback-active-btn {
+        background-color: #ED862F;
+      }
+
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+

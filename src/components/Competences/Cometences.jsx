@@ -1,22 +1,11 @@
 import React from 'react';
 import './Competences.scss';
-// import { BsFillPatchCheckFill } from 'react-icons/bs';
-import { FaHtml5 } from 'react-icons/fa';
-import { FaCss3 } from 'react-icons/fa';
-import { FaPhp } from 'react-icons/fa';
+
+import { FaHtml5,FaCss3,FaPhp,FaPython,FaJava, FaSymfony,FaNode,FaReact,FaDatabase,FaDocker,FaGithub } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
-import { FaPython } from 'react-icons/fa';
-import { FaJava } from 'react-icons/fa';
-import { FaSymfony } from 'react-icons/fa';
-import { FaReact } from 'react-icons/fa';
-import { SiMysql } from 'react-icons/si';
-import { FaNode } from 'react-icons/fa';
-import { SiMongodb } from 'react-icons/si';
-import { FaDatabase } from 'react-icons/fa';
+import { SiMysql,SiVirtualbox, SiMongodb } from 'react-icons/si';
 import { IoLogoFirebase } from 'react-icons/io5';
-import { FaDocker } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { SiVirtualbox } from 'react-icons/si';
+
 import { motion } from "framer-motion";
 
 const Competences = () => {
@@ -26,7 +15,7 @@ const Competences = () => {
       <h2>Compétences</h2>
       <span>
        {text.map((word,i)=>{
-        return <motion.h5 key={i} whileHover={{color:"orange"}}>{word}</motion.h5>
+        return <motion.h5 key={i} whileHover={{color:"#ED862F"}}>{word}</motion.h5>
        })}
       </span>
       <div className="experience__container ">

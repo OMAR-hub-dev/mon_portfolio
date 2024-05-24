@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import "./contact.scss";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView ,AnimatePresence} from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { RiMailSendLine } from "react-icons/ri";
 
@@ -22,32 +22,50 @@ const variants = {
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
+  const [message, setMessage] = useState(null);
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const isInView = useInView(ref, { margin: "-100px" });
 
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setFormData({ ...formData, [e.target.name]: e.target.value });
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_yv95wmw",
+        "template_6gx77qt",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "CpPiOPjjHFpERL6_8"
       )
       .then(
         (result) => {
-          setSuccess(true)
+          setMessage({
+            type: 'success',
+            text: 'votre message est bien envoyé',
+        })
         },
         (error) => {
-          setError(true);
+          setMessage({
+            type: 'error',
+            text: 'erreur, veuillez recommencer svp',
+          });
         }
       );
+
+    // Réinitialiser les champs du formulaire
+    setFormData({ name: '', email: '', message: '' });
+    // Masquer le message après 10 secondes.
+      setTimeout(() => {
+        setMessage(null);
+      }, 10000);
   };
 
   return (
+    
     <motion.div
       ref={ref}
       className="contact"
@@ -62,13 +80,14 @@ const Contact = () => {
           <span>oulaya.omar@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Addresse</h2>
+          <h2>Adresse</h2>
           <span>Île-de-France &nbsp;&nbsp;&nbsp; Paris</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
+          <h2>Téléphone</h2>
           <span>06 58 94 16 91</span>
         </motion.div>
+        <div className="footer"><small> &copy; Omar OULAYA, 2024. All rights reserved.</small></div>
       </motion.div>
       <div className="formContainer">
         <motion.div
@@ -92,15 +111,30 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Nom et prénom" name="name"/>
-          <input type="email" required placeholder="Email" name="email"/>
-          <textarea rows={8} placeholder="Message" name="message"/>
-          <button>Envoyer</button>
-          {error && "Error"}
-          {success && "Success"}
+          <input type="text"  onChange={handleChange} value={formData.name} required placeholder="Votre Nom ..." name="name"/>
+          <input type="email"  onChange={handleChange} value={formData.email} required placeholder="Votre Email ..." name="email"/>
+          <textarea rows={8}type="text"  onChange={handleChange} value={formData.message} placeholder="Votre Message ..." name="message"/>
+          <button type='submit'>Envoyer</button>
+          <AnimatePresence>
+            {message && (
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+                className={`message ${message.type}`}
+              >
+                {message.text}
+              </motion.div>
+              )}
+          </AnimatePresence>
+          
         </motion.form>
       </div>
+      
     </motion.div>
+    
+   
   );
 };
 

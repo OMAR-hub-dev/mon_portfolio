@@ -16,7 +16,9 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          OULAYA Omar
+          <a href="#Home" className="logo">
+            <img src="/logo.png" alt="logo" />
+          </a>
         </motion.span>
         <div className="header_socials">
           <a href="www.linkedin.com/in/omar-oulaya-270746220" target="_blank"><BsLinkedin/></a>
