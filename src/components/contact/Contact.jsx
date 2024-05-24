@@ -130,6 +130,7 @@ const Contact = () => {
           </AnimatePresence>
           
         </motion.form>
+        <div className="footer1"><small> &copy; Omar OULAYA, 2024. All rights reserved.</small></div>
       </div>
       
     </motion.div>

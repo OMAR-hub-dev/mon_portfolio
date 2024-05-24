@@ -62,7 +62,7 @@
     }
     .footer {
       position: relative;
-      bottom: -5rem;
+      bottom: -6.5rem;
       right: -15em;
       letter-spacing: 0.5px;
       @include tablet{bottom: -3rem; }
@@ -159,6 +159,13 @@
         padding: 10px;
       }
       
+    }
+    .footer1 {display: none;          
+      @include mobile{
+        display: block;
+        position: relative;
+        bottom: -5rem;       
+        letter-spacing: 0.5px; }
     }
   }
 }
