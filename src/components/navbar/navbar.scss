@@ -12,7 +12,7 @@
     height: 100%;
    
     @include mobile {
-      justify-content: flex-end;
+      // justify-content: flex-end;
       padding: 20px;
     }
    
@@ -22,7 +22,7 @@
       font-size: 28px;
 
       @include mobile {
-        font-size: 20px;
+        font-size: 18px;
       }
        img {      
       width:3.8em;          
@@ -34,7 +34,8 @@
       align-items:center ;
       justify-content: center;
       gap: 1.5rem;
-      font-size: 1.25em;       
+      font-size: 1.25em;
+      @include mobile{ gap:1rem}       
         }
         .header_socials  a:hover{
           color : rebeccapurple;
@@ -46,6 +47,7 @@
       width: 1.75rem;
       height: 3px;
       background:  rebeccapurple;
+      @include mobile{display: none;}
   }
   }
 }

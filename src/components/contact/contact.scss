@@ -24,13 +24,14 @@
     flex-direction: column;
     gap: 40px;
     text-align: center;
+   
 
     @include mobile {
       gap: 20px;
      
       text-align: center;
       align-items: center;
-      margin-top: 70px;
+      margin-top: 5em;
     }
 
     h1 {
@@ -38,7 +39,7 @@
       line-height: 35px;
       text-align: center;
       color: gray ;
-      @include tablet {font-size: 1.5em;}
+      @include tablet {font-size: 1.5em;line-height: 20px;}
       @include mobile {
         font-size: 1em;
       }
@@ -73,9 +74,8 @@
     flex: 1;
     position: relative; 
        
-    @include mobile {
-       
-      width:100%;
+    @include mobile {       
+      width:100%;      
     }
 
     .phoneSvg
@@ -109,9 +109,9 @@
        gap : 15px
       }
       @include mobile {
-        width: 22em;
+        width: 20em;
        height: 15em;
-       gap: 10px;
+       gap: 8px;
       }
       input,
       textarea {
@@ -125,7 +125,6 @@
           padding: 10px;
         } }
         ::placeholder {
-        // color: black; /*Change the placeholder color*/
         opacity:0.4; /*Change the opacity between 0 and 1*/
         }
       
