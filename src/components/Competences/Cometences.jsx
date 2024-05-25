@@ -9,7 +9,7 @@ import { IoLogoFirebase } from 'react-icons/io5';
 import { motion } from "framer-motion";
 
 const Competences = () => {
-  const text =  "Elles sont constamment améliorées, car je considère que la passion pour ce métier nous pousse à apprendre chaque jour davantage, notamment en étant impliqué, curieux et passionné.".split(" ");
+  const text =  "Elles sont constamment améliorées, car je considère que la passion pour ce métier nous pousse à apprendre chaque jour davantage, surtout en étant impliqué, curieux et passionné.".split(" ");
   return (
     <div className="container">
       <h2>Compétences</h2>
