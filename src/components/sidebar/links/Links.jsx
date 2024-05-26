@@ -24,9 +24,12 @@ const itemVariants = {
   },
 };
 
-const Links = () => {
+const Links = ({setOpen}) => {
   const items = ["Home", "Compétences", "Services", "Projets","Avis", "Contact"];
-
+  const toggleMenu = (event) => {
+    event.stopPropagation();
+    setOpen((prev) => !prev);
+  };
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
@@ -36,6 +39,7 @@ const Links = () => {
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          onClick={toggleMenu}
         >
           {item}
         </motion.a>

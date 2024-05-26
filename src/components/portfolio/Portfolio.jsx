@@ -31,21 +31,21 @@ const items = [
 
 Les technologies utilisées sont :`,
     git : "https://github.com/OMAR-hub-dev/LaMaisonDeLADeco",
-    icones: [ FaHtml5,FaCss3,FaBootstrap, FaPhp, FaSymfony,SiComposer, FaStripe]
+    icones: [ FaHtml5,FaCss3,FaBootstrap, FaPhp, FaSymfony,SiMysql, FaStripe]
   },
   {
     id: 3,
     title: "critiques de films ",
     img: "/movie_projet.png",
     desc: "une application en utilisant MongoDb pour la base de données, Java et Spring Boot pour le backend et React pour le frontend. une application de critique de films qui présentera une séparation  entre le code client et le code serveur. Ces deux parties (implémentées à l'aide de technologies différentes) peuvent évoluer en parallèle et indépendamment l'une de l'autre.<br>Les technologies utilisées sont :",
-    git: "https://github.com/OMAR-hub-dev/Movie_review/tree/master--",
-    icones: [ FaHtml5,FaCss3,SiMongodb, FaJava, FaReact]
+    git: "https://github.com/OMAR-hub-dev/Movie_review",
+    icones: [ FaHtml5,FaCss3,SiMongodb,SiAxios , FaJava, FaReact]
   },
   {
     id: 4,
     title: "lancer de dé ",
     img: "/lancer_dé.PNG",
-    desc: "C'est un jeu de lancer de dés implémenté en Vanilla JavaScript. Il se joue à deux joueurs, Joueur 1 et Joueur 2, qui jouent alternativement en cliquant sur le bouton . À chaque tour, un joueur lance le dé autant de fois qu'il le souhaite. Chaque résultat est ajouté à son score EN COURS. Cependant, si un joueur obtient un 1 lors d'une série de lancers, tout son score EN COURS est perdu, et il doit passer la main au joueur adverse.<br>Les technologies utilisées sont :",
+    desc: "C'est un jeu de lancer de dés implémenté en Vanilla JavaScript. Il se joue à 2 alternativement. À chaque tour, un joueur lance le dé autant de fois qu'il le souhaite. Chaque résultat est ajouté à son score EN COURS. Cependant, si un joueur obtient un 1 lors d'une série de lancers, tout son score EN COURS est perdu, et il doit passer la main au joueur adverse.<br>Les technologies utilisées sont :",
     git:'https://github.com/OMAR-hub-dev/jeu_de_d-_virtuel',
     icones: [ FaHtml5,FaCss3, FaBootstrap,IoLogoJavascript, FaGithub]
   },
@@ -55,7 +55,7 @@ Les technologies utilisées sont :`,
     img: "/Bondoufle_store.png",
     desc: "C'est un site Web de commerce électronique entièrement fonctionnel exactement comme Amazon, .<br>Les technologies utilisées sont :",
     git: 'https://github.com/OMAR-hub-dev/Bondoufle-store',
-    icones: [ FaHtml5,FaCss3,FaBootstrap,FaReact, SiAxios , FaNode,SiMongodb,FaStripe]
+    icones: [ FaHtml5,FaCss3,FaBootstrap,FaReact,  FaNode,SiMongodb,FaStripe]
   },
 ];
 
