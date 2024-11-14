@@ -1,6 +1,6 @@
 import './hero.scss';
 import { motion } from 'framer-motion';
-import CV from '../../assets/CV_Omar_OULAYA.pdf';
+import CV from '../../assets/Cv_Développeur.pdf';
 
 const textVariants = {
   initial: {
@@ -50,10 +50,10 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}><hr />Hi, I'Am</motion.h2>
           <motion.h1 variants={textVariants} whileHover={{color:"orange"}}>
-           OULAYA Omar 
+           OULAYA Omar
           </motion.h1>
           <motion.h3 variants={textVariants} >
-            Développeur Web 
+            Développeur Web
           </motion.h3>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants} className='btn'>
