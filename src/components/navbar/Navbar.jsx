@@ -21,7 +21,7 @@ const Navbar = () => {
           </a>
         </motion.span>
         <div className="header_socials">
-          <a href="www.linkedin.com/in/omar-oulaya-270746220" target="_blank"><BsLinkedin/></a>
+          <a href="https://www.linkedin.com/in/omar-oulaya-270746220" target="_blank"><BsLinkedin/></a>
           <a href="https://github.com/OMAR-hub-dev" target="_blank"><AiFillGithub/></a>
           <a href="https://discord.com/users/898116111382482966" target="_blank"><BsDiscord /></a>
         </div>

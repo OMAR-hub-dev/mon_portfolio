@@ -3,8 +3,9 @@ import './Competences.scss';
 
 import { FaHtml5,FaCss3,FaPhp,FaPython,FaJava, FaSymfony,FaNode,FaReact,FaDatabase,FaDocker,FaGithub } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
-import { SiMysql,SiVirtualbox, SiMongodb } from 'react-icons/si';
+import { SiMysql,SiVirtualbox, SiMongodb, SiNestjs } from 'react-icons/si';
 import { IoLogoFirebase } from 'react-icons/io5';
+import { GrGraphQl } from "react-icons/gr";
 
 import { motion } from "framer-motion";
 
@@ -22,48 +23,48 @@ const Competences = () => {
         <div className="experience__">
           <h3>Développement web</h3>
           <div className="experience__content">
-            <article className="experience_details">
-              <FaHtml5 className="experience__details-icons" />
-              <h4>HTML</h4>
-              {/* <small className='text-light'>experienced</small> */}
-            </article>
 
             <article className="experience_details">
-              <FaCss3 className="experience__details-icons" />
-              <h4>CSS</h4>
+              <FaJava className="experience__details-icons"/>
+              <h4>Java</h4>
               {/* <small className='text-light'>experienced</small> */}
             </article>
-
             <article className="experience_details">
-              <FaPhp className="experience__details-icons" />
+              <FaPhp className="experience__details-icons"/>
               <h4>PHP</h4>
               {/* <small className='text-light'>intermediare</small> */}
             </article>
 
             <article className="experience_details">
-              <IoLogoJavascript className="experience__details-icons" />
+              <IoLogoJavascript className="experience__details-icons"/>
               <h4>Javascript</h4>
               {/* <small className='text-light'>experienced</small> */}
             </article>
 
             <article className="experience_details">
-              <FaPython className="experience__details-icons" />
+              <FaPython className="experience__details-icons"/>
               <h4>Python</h4>
               {/* <small className='text-light'>experienced</small> */}
             </article>
+
             <article className="experience_details">
-              <FaJava className="experience__details-icons" />
-              <h4>Java</h4>
-              {/* <small className='text-light'>experienced</small> */}
-            </article>
-            <article className="experience_details">
-              <FaSymfony className="experience__details-icons" />
+              <FaSymfony className="experience__details-icons"/>
               <h4>Symfony</h4>
               {/* <small className='text-light'>experienced</small> */}
             </article>
             <article className="experience_details">
-              <FaReact className="experience__details-icons" />
+              <FaReact className="experience__details-icons"/>
               <h4>Reactjs</h4>
+              {/* <small className='text-light'>experienced</small> */}
+            </article>
+            <article className="experience_details">
+              <FaNode className="experience__details-icons"/>
+              <h4>Nodejs</h4>
+              {/* <small className='text-light'>experienced</small> */}
+            </article>
+            <article className="experience_details">
+              <SiNestjs className="experience__details-icons" />
+              <h4>Nestjs</h4>
               {/* <small className='text-light'>experienced</small> */}
             </article>
           </div>
@@ -97,11 +98,7 @@ const Competences = () => {
               <h4>Docker</h4>
               {/* <small className='text-light'>experienced</small> */}
             </article>
-            <article className="experience_details">
-              <FaNode className="experience__details-icons" />
-              <h4>Nodejs</h4>
-              {/* <small className='text-light'>experienced</small> */}
-            </article>
+
             <article className="experience_details">
               <FaGithub className="experience__details-icons" />
               <h4>GitHub</h4>
@@ -112,6 +109,12 @@ const Competences = () => {
               <h4>Virtual Box</h4>
               {/* <small className='text-light'>experienced</small> */}
             </article>
+            <article className="experience_details">
+              <GrGraphQl className="experience__details-icons" />
+              <h4>GraphQl</h4>
+              {/* <small className='text-light'>experienced</small> */}
+            </article>
+
           </div>
         </div>
       </div>
