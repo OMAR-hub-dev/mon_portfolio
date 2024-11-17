@@ -1,6 +1,6 @@
 import './hero.scss';
 import { motion } from 'framer-motion';
-import CV from '../../assets/Cv_Développeur.pdf';
+import CV from '../../assets/CV-Développeur.pdf';
 
 const textVariants = {
   initial: {
