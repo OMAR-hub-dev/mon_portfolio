@@ -25,7 +25,7 @@ const itemVariants = {
 };
 
 const Links = ({setOpen}) => {
-  const items = ["Home", "Compétences", "Services", "Projets","Avis", "Contact"];
+  const items = ["Acceuil", "Compétences", "Services", "Projets","Avis", "Contact"];
   const toggleMenu = (event) => {
     event.stopPropagation();
     setOpen((prev) => !prev);

@@ -5,7 +5,7 @@
   max-width: 1366px;
   margin: 0 2em;
   display: flex;
- 
+
   align-items: center;
   justify-content: center;
   gap: 70px;
@@ -14,7 +14,7 @@
     // width: 100%;
     padding: 10px;
     flex-direction: column;
-    
+
     gap: 20px;
   }
 
@@ -24,11 +24,11 @@
     flex-direction: column;
     gap: 40px;
     text-align: center;
-   
+
 
     @include mobile {
       gap: 20px;
-     
+
       text-align: center;
       align-items: center;
       margin-top: 5em;
@@ -47,7 +47,7 @@
 
     span {
       font-weight: 300;
-      
+
     }
     .item{
       display: flex;
@@ -72,10 +72,10 @@
 
   .formContainer {
     flex: 1;
-    position: relative; 
-       
-    @include mobile {       
-      width:100%;      
+    position: relative;
+
+    @include mobile {
+      width:100%;
     }
 
     .phoneSvg
@@ -87,14 +87,14 @@
        color: orange;
         position: absolute;
         margin: auto;
-        @include mobile 
+        @include mobile
         {
           width: 350px;
           height: 150px;
-        }        
+        }
       }
     }
-    
+
 
     form {
       width: 35em;
@@ -109,7 +109,7 @@
        gap : 15px
       }
       @include mobile {
-        width: 20em;
+        width: 18em;
        height: 15em;
        gap: 8px;
       }
@@ -119,7 +119,7 @@
         background-color: transparent;
         border: 1px solid white;
         color: white;
-        border-radius: 5px;       
+        border-radius: 5px;
 
         @include mobile {
           padding: 10px;
@@ -127,8 +127,8 @@
         ::placeholder {
         opacity:0.4; /*Change the opacity between 0 and 1*/
         }
-      
-     
+
+
 
       button {
         padding: 20px;
@@ -158,13 +158,13 @@
         border: none;
         padding: 10px;
       }
-      
+
     }
-    .footer1 {display: none;          
+    .footer1 {display: none;
       @include mobile{
         display: block;
         position: relative;
-        bottom: -5rem;       
+        bottom: -3rem;
         letter-spacing: 0.5px; }
     }
   }
